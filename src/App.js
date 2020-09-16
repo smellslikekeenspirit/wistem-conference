@@ -13,7 +13,7 @@ import DocumentTitle from "react-document-title";
 
 export default function App() {
 	return (
-		<DocumentTitle title="Cooking Companion">
+		<DocumentTitle title="WiSTEM Summit 2020">
 			<Router basename={process.env.PUBLIC_URL}>
 				<hr></hr>
 				<footer>
