@@ -10,6 +10,7 @@ import HomePage from "./components/HomePage";
 import RegistrationForm from "./components/RegistrationForm";
 import PageNotFound from "./components/PageNotFound";
 import DocumentTitle from "react-document-title";
+import ReviewPage from "./components/ReviewPage";
 
 export default function App() {
 	return (
@@ -24,6 +25,7 @@ export default function App() {
 				<Switch>
 					<Route path="/" exact={true} component={HomePage}></Route>
 					<Route path="/add" component={RegistrationForm}></Route>
+					<Route path="/review" component={ReviewPage}></Route>
 					<Route component={PageNotFound}></Route>
 				</Switch>
 			</Router>

@@ -17,7 +17,7 @@ p, div {
   .form-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 500px;
+	width: 700px;
 	min-width: 100px;
 	min-height: 500px;
 	padding: 20px 40px;
@@ -30,7 +30,7 @@ p, div {
 	display: flex;
 	justify-content: center;
 	font-family: "Poppins", sans-serif;
-	font-size: 20px;
+	font-size: 10px;
 	font-weight: lighter;
 	margin-top: 0.25em;
 	color: #222;
@@ -49,16 +49,23 @@ p, div {
   }
   
   label {
-	margin-bottom: 0.5em;
 	color: #444;
 	font-weight: lighter;
   }
   
   input {
-	padding: 10px 10px;
-	border-radius: 5px;
+	padding: 5px 5px;
+	height: 18px;
+	border-radius: 1px;
 	outline: none;
-	border: 1px solid #d6d1d5;
+	border: 0.5px solid #d6d1d5;
+  }
+
+  select {
+	height: 28px;
+	border-radius: 1px;
+	outline: none;
+	border: 0.5px solid #d6d1d5;
   }
   
   input::placeholder {
@@ -70,9 +77,10 @@ p, div {
   button {
 	background-color: rgb(109, 42, 106);
 	min-width: 20%;
+	max-height: 50px;
 	cursor: pointer;
 	padding: 	1em;
-	margin-top: 20px;
+	margin-top: 10px;
 	font-family: "Poppins", sans-serif;
 	font-size: 15px;
 	border: none;
@@ -110,10 +118,22 @@ p, div {
   .lastName,
   .streetAddress,
   .email,
-  .password {
+  .organization,
+  .status,
+  .paymentMethod {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+	width: 100%;
+
+  }
+
+  .city,
+  .state,
+  .zipcode {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
 	width: 100%;
 
   }
