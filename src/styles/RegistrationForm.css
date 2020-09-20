@@ -1,12 +1,11 @@
 p, div {
-	font-family: Lato;
+	font-family: "Poppins", sans-serif;
+	font-size: 12.5px;
   }
   
   .wrapper {
-	height: 99.6vh;
+	height: max-content;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background: url('wistem.jpg') no-repeat center center fixed;
@@ -15,9 +14,12 @@ p, div {
   }
   
   .form-wrapper {
-	display: flex;
-	flex-direction: column;
-	width: 700px;
+	display: table;
+	align-items: center;
+	width: 600px;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
 	min-width: 100px;
 	min-height: 500px;
 	padding: 20px 40px;
@@ -27,42 +29,34 @@ p, div {
   }
   
   .form-wrapper > h2 {
-	display: flex;
-	justify-content: center;
+	display: table;
 	font-family: "Poppins", sans-serif;
-	font-size: 10px;
+	font-size: 5px;
 	font-weight: lighter;
 	margin-top: 0.25em;
 	color: #222;
   }
   
-  form {
-	width: 100%;
-	display: table;
-	flex-wrap: wrap;
-  }
-  
-  .info {
-	padding-bottom: 1em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-  }
-  
   label {
+	text-align: left;
+	margin-right: 10px;
 	color: #444;
 	font-weight: lighter;
   }
   
   input {
+	width: 90%;
 	padding: 5px 5px;
-	height: 18px;
+	margin-right: 20px;
+	height: 15px;
 	border-radius: 1px;
 	outline: none;
 	border: 0.5px solid #d6d1d5;
   }
 
   select {
-	height: 28px;
+	height: 30px;
+	width: 92%;
 	border-radius: 1px;
 	outline: none;
 	border: 0.5px solid #d6d1d5;
@@ -75,29 +69,32 @@ p, div {
   }
   
   button {
-	background-color: rgb(109, 42, 106);
-	min-width: 20%;
+	background-color: #400059;
+	display:inline-block;
+	min-width: 30%;
 	max-height: 50px;
 	cursor: pointer;
 	padding: 	1em;
-	margin-top: 10px;
+	margin-top: 5px;
 	font-family: "Poppins", sans-serif;
-	font-size: 15px;
+	font-style: bold;
+	font-size: 16px;
 	border: none;
 	border-radius: 4px;
 	color: #fefefe;
 	margin-left: auto;
 	margin-right: auto;
-  	display:block;
   }
+
   button:hover {
-	background-color: #4A4E69;
+	background-color: #400059;
 	color: #fefefe;
   }
-  
+
   input.error {
 	border: 1px solid #EADAE4;
   }
+
   .mark {
   	padding-left: 0.5vh;
   	padding-right: 2vh;
@@ -110,32 +107,28 @@ p, div {
 	display: relative;
   }
   
-  .firstName {
-	margin-right: 1%;
+  .row { 
+	display: table-row;
+	width: 100%;
+	margin-bottom: 0px;
+	}
+
+  .cell {
+	  width: 280px;
+	  text-align: left;
+	  display: table-cell;
+	  margin-bottom: 5px;
+
   }
   
-  .firstName,
-  .lastName,
   .streetAddress,
+  .date,
   .email,
-  .organization,
-  .status,
-  .paymentMethod {
+  .organization {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 	width: 100%;
-
-  }
-
-  .city,
-  .state,
-  .zipcode {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10px;
-	width: 100%;
-
   }
   
   .submit {

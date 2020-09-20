@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import "./styles/App.css";
 import HomePage from "./components/HomePage";
+import ConfirmationPage from "./components/ConfirmationPage";
 import RegistrationForm from "./components/RegistrationForm";
 import PageNotFound from "./components/PageNotFound";
 import DocumentTitle from "react-document-title";
@@ -24,8 +25,9 @@ export default function App() {
 
 				<Switch>
 					<Route path="/" exact={true} component={HomePage}></Route>
-					<Route path="/add" component={RegistrationForm}></Route>
+					<Route path="/register" component={RegistrationForm}></Route>
 					<Route path="/review" component={ReviewPage}></Route>
+					<Route path="/confirm" component={ConfirmationPage}></Route>
 					<Route component={PageNotFound}></Route>
 				</Switch>
 			</Router>

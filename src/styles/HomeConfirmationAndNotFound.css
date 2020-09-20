@@ -1,5 +1,6 @@
 .homePage,
-.pageNotFound {
+.pageNotFound,
+.confirmationPage {
   background: url('wistem.jpg') no-repeat center center fixed;
   background-size: cover;
   opacity: 0.7;  color: black;
@@ -11,7 +12,8 @@
 }
 
 .homePage h1,
-.pageNotFound h1 {
+.pageNotFound h1,
+.confirmationPage h1 {
   margin-bottom: 50px;
   margin-top: 0;
   padding-top: 25vh;
@@ -23,16 +25,18 @@
   font-size: 10vh;
 }
 
-.pageNotFound h1 {
+.pageNotFound h1,
+.confirmationPage h1  {
   font-size: 5vh;
 }
 
 .homePage mark,
-.pageNotFound mark {
+.pageNotFound mark,
+.confirmationPage mark {
   padding-left: 0.5vh;
   padding-right: 2vh;
-  background-color: #f3ede6;
-  color: #003459;
+  background-color: #f8e2ff;
+  color: #400059;
 }
 
 .homePage h2,
@@ -52,7 +56,7 @@
 }
 
 .button {
-  background-color: rgb(109, 42, 106);
+  background-color: #400059;
   min-width: 100px;
   width: 200px;
   color: white;

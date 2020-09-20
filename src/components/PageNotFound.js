@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/HomeAndNotFound.css";
+import "../styles/HomeConfirmationAndNotFound.css";
 
 export default function PageNotFound() {
   return (

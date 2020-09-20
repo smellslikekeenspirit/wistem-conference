@@ -1,12 +1,13 @@
 import React from "react";
-import "../styles/HomeAndNotFound.css";
+import "../styles/HomeConfirmationAndNotFound.css";
 import DocumentTitle from "react-document-title";
 
 
 
 export default class HomePage extends React.Component {
 	handleClick = () => {
-		this.props.history.push('/add');
+		sessionStorage.clear();
+		this.props.history.push('/register');
 	}
 
 	render() {
