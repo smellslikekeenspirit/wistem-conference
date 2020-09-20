@@ -346,7 +346,7 @@ export default class RegistrationForm extends React.Component {
                 <span className='error'>{errors.organization}</span>}
             </div>
             <div className="date">
-              <label for="start" class="required">Preferred Date</label>
+              <label for="start" class="required">Date of Birth</label>
               <input name='date' placeholder='dd/mm/yyyy' value={this.state.date} onChange={this.handleChange} noValidate />
               {errors.date.length > 0 && 
                 <span className='error'>{errors.date}</span>}
